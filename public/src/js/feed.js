@@ -52,7 +52,7 @@ function createCard(data) {
   cardWrapper.className = 'shared-moment-card mdl-card mdl-shadow--2dp';
   var cardTitle = document.createElement('div');
   cardTitle.className = 'mdl-card__title';
-  cardTitle.style.backgroundImage = 'url(' + data.image + ')';
+  cardTitle.style.backgroundImage = 'url("/src/images/sf-boat.jpg")';
   cardTitle.style.backgroundSize = 'cover';
   cardWrapper.appendChild(cardTitle);
   var cardTitleTextElement = document.createElement('h2');
@@ -62,7 +62,7 @@ function createCard(data) {
   cardTitle.appendChild(cardTitleTextElement);
   var cardSupportingText = document.createElement('div');
   cardSupportingText.className = 'mdl-card__supporting-text';
-  cardSupportingText.textContent = data.location;
+  cardSupportingText.textContent = 'In San Francisco';
   cardSupportingText.style.textAlign = 'center';
   // var cardSaveButton = document.createElement('button');
   // cardSaveButton.textContent = 'Save';
